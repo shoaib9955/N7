@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface CaseStudyCardProps {
   imageSrc: string;
@@ -21,11 +22,13 @@ export default function CaseStudyCard({
     <div className="relative z-20 w-full max-w-[1015px] rounded-[14px] sm:rounded-[16px] lg:rounded-[18px] bg-[#01141B] p-5 sm:p-6 lg:p-8">
       <div className="grid lg:grid-cols-[minmax(280px,420px)_1fr] gap-6 sm:gap-8 lg:gap-10 items-center">
         {/* Case Study Image */}
-        <div className="h-[250px] sm:h-[300px] lg:h-[380px] rounded-[10px] sm:rounded-[12px] overflow-hidden bg-[#07193C]">
-          <img
+        <div className="h-[250px] sm:h-[300px] lg:h-[380px] rounded-[10px] sm:rounded-[12px] overflow-hidden bg-[#07193C] relative">
+          <Image
             src={imageSrc}
             alt={imageAlt}
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            unoptimized
           />
         </div>
 
@@ -47,10 +50,13 @@ export default function CaseStudyCard({
 
           {/* Author/Partner Logo */}
           <div className="flex items-center gap-3 mt-6 sm:mt-8 text-[#6C8799]">
-            <img
+            <Image
               src={logoSrc}
               alt={logoAlt}
+              width={24}
+              height={24}
               className="h-5 sm:h-6 w-auto"
+              unoptimized
             />
           </div>
 

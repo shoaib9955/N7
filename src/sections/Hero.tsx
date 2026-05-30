@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -82,14 +83,17 @@ export default function Hero() {
                   Trusted By:
                 </p>
 
-                <img
+                <Image
                   src="/images/Row.png"
                   alt="trusted"
+                  width={520}
+                  height={100}
                   className="
                     w-full
                     max-w-[400px] sm:max-w-[520px]
                     object-contain
                   "
+                  unoptimized
                 />
 
               </div>
@@ -109,9 +113,11 @@ export default function Hero() {
               >
 
                 {/* Girl Image */}
-                <img
+                <Image
                   src="/images/girl.png"
                   alt="girl"
+                  width={362}
+                  height={400}
                   className="
                     absolute
                     left-[10%] sm:left-[15%]
@@ -121,12 +127,15 @@ export default function Hero() {
                     rounded-[20px] sm:rounded-[25px] md:rounded-[31px]
                     z-10
                   "
+                  unoptimized
                 />
 
                 {/* Left Card */}
-                <img
+                <Image
                   src="/images/HOME1.png"
                   alt="hero1"
+                  width={254}
+                  height={300}
                   className="
                     absolute
                     left-0
@@ -137,12 +146,15 @@ export default function Hero() {
                     z-20
                     shadow-2xl
                   "
+                  unoptimized
                 />
 
                 {/* Right Card */}
-                <img
+                <Image
                   src="/images/HOME2.png"
                   alt="hero2"
+                  width={199}
+                  height={250}
                   className="
                     absolute
                     right-0
@@ -153,6 +165,7 @@ export default function Hero() {
                     z-20
                     shadow-2xl
                   "
+                  unoptimized
                 />
 
               </div>

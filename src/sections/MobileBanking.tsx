@@ -1,8 +1,7 @@
-
-
 import { Check } from "lucide-react";
 import BackdropText from "@/components/ui/BackdropText";
 import FeatureItem from "@/components/ui/FeatureItem";
+import Image from "next/image";
 
 export default function MobileBanking() {
   return (
@@ -47,10 +46,13 @@ export default function MobileBanking() {
 
           {/* PHONE */}
           <div className="flex justify-center order-first lg:order-none">
-            <img
+            <Image
               src="/images/mobile-1.png"
               alt="Mobile Banking"
+              width={340}
+              height={600}
               className="w-[200px] sm:w-[260px] md:w-[300px] lg:w-[320px] xl:w-[340px] object-contain"
+              unoptimized
             />
           </div>
 
@@ -117,10 +119,13 @@ export default function MobileBanking() {
           </div>
 
           <div className="flex justify-center order-first md:order-none">
-            <img
+            <Image
               src="/images/mobile-2.png"
               alt="Mobile Banking"
+              width={340}
+              height={600}
               className="w-[200px] sm:w-[260px] md:w-[300px] lg:w-[320px] xl:w-[340px] object-contain"
+              unoptimized
             />
           </div>
         </div>
@@ -134,10 +139,13 @@ export default function MobileBanking() {
 
   {/* PHONE 3 - CENTER COLUMN */}
   <div className="flex justify-center order-first md:order-none">
-    <img
+    <Image
       src="/images/mobile-3.png"
       alt="Profile Mobile"
+      width={320}
+      height={600}
       className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px] xl:w-[320px] object-contain"
+      unoptimized
     />
   </div>
 

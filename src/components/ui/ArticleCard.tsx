@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ArticleCardProps {
   title: string;
@@ -22,8 +23,8 @@ export default function ArticleCard({
       <div className="rounded-[14px] sm:rounded-[16px] lg:rounded-[18px] bg-[#01141B] p-5 sm:p-6 lg:p-8">
         <div className="grid md:grid-cols-[minmax(200px,295px)_1fr] gap-6 sm:gap-8 items-center">
           {/* Image */}
-          <div className="w-full h-[200px] sm:h-[240px] md:h-[267px] bg-[#07193C] rounded-[8px] overflow-hidden">
-            <img src={imageSrc} alt={title} className="w-full h-full object-cover" />
+          <div className="w-full h-[200px] sm:h-[240px] md:h-[267px] bg-[#07193C] rounded-[8px] overflow-hidden relative">
+            <Image src={imageSrc} alt={title} fill className="object-cover" unoptimized />
           </div>
 
           {/* Content */}

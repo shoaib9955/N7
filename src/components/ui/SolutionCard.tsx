@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface SolutionCardProps {
   icon: string;
@@ -16,10 +17,13 @@ export default function SolutionCard({
   return (
     <div className="max-w-full sm:max-w-[270px]">
       <div className="mb-6 flex items-center justify-between">
-        <img
+        <Image
           src={icon}
           alt={title}
+          width={47}
+          height={47}
           className="h-[40px] w-[40px] sm:h-[47px] sm:w-[47px] object-contain"
+          unoptimized
         />
 
         {tag && (

@@ -1,5 +1,6 @@
 import React from "react";
 import { Check } from "lucide-react";
+import Image from "next/image";
 
 interface FeatureItemProps {
   text: string;
@@ -31,10 +32,13 @@ export default function FeatureItem({
               "linear-gradient(90deg, rgba(0,180,253,1) 0%, rgba(0,58,206,1) 100%)",
           }}
         >
-          <img
+          <Image
             src="/icons/check.png"
             alt="check"
+            width={9}
+            height={7}
             className="h-[7px] w-[9px]"
+            unoptimized
           />
         </div>
       ) : (

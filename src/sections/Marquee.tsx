@@ -1,9 +1,14 @@
+import Image from "next/image";
+
 const MarqueeItem = () => (
   <>
-    <img
+    <Image
       src="/icons/Vector-6.png"
       alt=""
+      width={58}
+      height={58}
       className="w-[30px] h-[30px] sm:w-[42px] sm:h-[42px] md:w-[50px] md:h-[50px] lg:w-[58px] lg:h-[58px] opacity-30 flex-shrink-0"
+      unoptimized
     />
 
     <span
@@ -18,10 +23,13 @@ const MarqueeItem = () => (
       N7
     </span>
 
-    <img
+    <Image
       src="/icons/Vector-6.png"
       alt=""
+      width={58}
+      height={58}
       className="w-[30px] h-[30px] sm:w-[42px] sm:h-[42px] md:w-[50px] md:h-[50px] lg:w-[58px] lg:h-[58px] opacity-30 flex-shrink-0"
+      unoptimized
     />
 
     <span
@@ -40,10 +48,13 @@ const MarqueeItem = () => (
       to the new way of banking
     </span>
 
-    <img
+    <Image
       src="/icons/Vector-6.png"
       alt=""
+      width={58}
+      height={58}
       className="w-[30px] h-[30px] sm:w-[42px] sm:h-[42px] md:w-[50px] md:h-[50px] lg:w-[58px] lg:h-[58px] opacity-30 flex-shrink-0"
+      unoptimized
     />
 
     <span
@@ -58,10 +69,13 @@ const MarqueeItem = () => (
       CB7
     </span>
 
-    <img
+    <Image
       src="/icons/Vector-6.png"
       alt=""
+      width={58}
+      height={58}
       className="w-[30px] h-[30px] sm:w-[42px] sm:h-[42px] md:w-[50px] md:h-[50px] lg:w-[58px] lg:h-[58px] opacity-30 flex-shrink-0"
+      unoptimized
     />
   </>
 );

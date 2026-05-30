@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import FooterOfficeCard from "@/components/ui/FooterOfficeCard";
+import Image from "next/image";
 
 const solutions = [
   "Core Banking CB7",
@@ -32,10 +33,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-16 lg:gap-[70px]">
           {/* LOGO */}
           <div className="flex justify-center lg:justify-start">
-            <img
+            <Image
               src="/images/logo1.png"
               alt="N7"
+              width={405}
+              height={100}
               className="w-[240px] md:w-[320px] lg:w-[405px] h-auto"
+              unoptimized
             />
           </div>
 
