@@ -3,7 +3,7 @@ import SolutionCard from "@/components/ui/SolutionCard";
 export default function Solutions() {
   const solutions = [
     {
-      icon: "/icons/vector.png",
+      icon: "/icons/Vector.png",
       title: "Core Banking CB7",
       description:
         "CB7 helps your financial institution improve the client experience, automate and optimize procedures, simplify banking operations for your employees, improve risk management, increase productivity, and ensure full regulatory compliance.",
