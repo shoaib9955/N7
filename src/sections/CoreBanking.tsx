@@ -1,6 +1,7 @@
 import BackdropText from "@/components/ui/BackdropText";
 import LaptopMockup from "@/components/ui/LaptopMockup";
 import FeatureItem from "@/components/ui/FeatureItem";
+import Image from "next/image";
 
 export default function CoreBanking() {
   const features = [
@@ -64,10 +65,13 @@ export default function CoreBanking() {
                 LEARN MORE
               </span>
 
-              <img
+              <Image
                 src="/icons/arrow.png"
                 alt="arrow"
+                width={8}
+                height={8}
                 className="h-[8px] w-[8px]"
+                unoptimized
               />
             </div>
           </div>
